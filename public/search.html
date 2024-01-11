@@ -107,7 +107,7 @@
         });
 
         function performSearch() {
-            window.navigator.serviceWorker.register('./sw.js', {
+            window.navigator.serviceWorker.register('/public/sw.js', {
                 scope: __uv$config.prefix
             }).then(() => {
                 let url = input.value.trim();
